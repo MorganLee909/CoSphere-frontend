@@ -3,7 +3,6 @@
     import Menu from "./Menu.svelte";
     import User from "./components/User.svelte";
     import UserExample from "./components/UserExample.svelte";
-    import UserObject from "./components/UserObject.svelte";
 
     let showAside = false;
     let currentAside = "";
@@ -18,10 +17,7 @@
     <Menu></Menu>
 
     <main>
-        <User>
-            <div class="divider"></div>
-            <UserObject on:displayAside={displayAside}></UserObject>
-        </User>
+        <User on:displayAside={displayAside}/>
     </main>
 
     {#if showAside} 
@@ -42,11 +38,6 @@
 
     main{
         padding: 0 15px;
-    }
-
-    .divider{
-        border-top: 1px solid rgba(255, 255, 255, 0.35);
-        margin: 10px 0;
     }
 
     aside{

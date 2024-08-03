@@ -3,7 +3,7 @@
     import ExampleButton from "./ExampleButton.svelte";
 </script>
 
-<div class="object">
+<div id="userObject" class="object">
     <h2>User Object</h2>
 
     <ExampleButton example="userExample" on:displayAside/>

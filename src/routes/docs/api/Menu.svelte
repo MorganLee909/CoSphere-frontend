@@ -1,21 +1,38 @@
 <div id="menu">
     <h1>CoSphere</h1>
-    <a class="dataType" href="/">User</a>
+    <a class="main" href="#user">User</a>
+    <a class="sub" href="#userObject">User Object</a>
+    <a class="sub" href="#createUser">Create User</a>
 </div>
 
 <style>
     *{margin:0;padding:0;box-sizing:border-box;}
 
-    #menu{
-        min-height: 100vh;
-        max-width: 250px;
-        border-right: 1px solid black;
+    h1{
+        text-align: center;
     }
 
-    .dataType{
+    #menu{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 250px;
+        border-right: 3px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .main{
         font-size: 22px;
         font-weight: bold;
         text-decoration: none;
-        color: black;
+        color: rgb(200, 200, 200);
+        margin-left: 5px;
+        margin: 25px 0 0 5px;
+    }
+
+    .sub{
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(200, 200, 200);
+        margin-left: 25px;
     }
 </style>
