@@ -3,6 +3,7 @@
     import Menu from "./Menu.svelte";
     import User from "./components/User.svelte";
     import UserExample from "./components/UserExample.svelte";
+    import UserObject from "./components/UserObject.svelte";
 
     let showAside = false;
     let currentAside = "";
@@ -18,7 +19,9 @@
     <Menu></Menu>
 
     <main>
-        <User on:displayAside={displayAside}></User>
+        <User on:displayAside={displayAside}>
+            <UserObject></UserObject>
+        </User>
     </main>
 
     {#if showAside} 
