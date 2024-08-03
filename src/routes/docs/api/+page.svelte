@@ -41,10 +41,17 @@
     }
 
     main{
-        width: 50vw;
+        padding: 0 15px;
     }
 
     .divider{
         border-top: 1px solid rgba(255, 255, 255, 0.35);
+        margin: 10px 0;
+    }
+
+    aside{
+        display: flex;
+        align-items: center;
+        max-width: 50%;
     }
 </style>
