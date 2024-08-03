@@ -9,7 +9,6 @@
     let currentAside = "";
 
     function displayAside(event){
-        console.log("show aside");
         showAside = !showAside;
         currentAside = event.detail.currentAside;
     }
@@ -19,8 +18,9 @@
     <Menu></Menu>
 
     <main>
-        <User on:displayAside={displayAside}>
-            <UserObject></UserObject>
+        <User>
+            <div class="divider"></div>
+            <UserObject on:displayAside={displayAside}></UserObject>
         </User>
     </main>
 
@@ -42,5 +42,9 @@
 
     main{
         width: 50vw;
+    }
+
+    .divider{
+        border-top: 1px solid rgba(255, 255, 255, 0.35);
     }
 </style>
