@@ -4,6 +4,7 @@
     import User from "./user/User.svelte";
     import UserExample from "./user/UserExample.svelte";
     import CreateUserExample from "./user/CreateUserExample.svelte";
+    import GetUserExample from "./user/GetUserExample.svelte";
 
     let showAside = false;
     let currentAside = "";
@@ -37,6 +38,8 @@
                 <UserExample/>
             {:else if currentAside === "createUser"}
                 <CreateUserExample/>
+            {:else if currentAside === "getUser"}
+                <GetUserExample/>
             {/if}
         </aside>
     {/if}

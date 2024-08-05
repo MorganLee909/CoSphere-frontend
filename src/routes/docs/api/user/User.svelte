@@ -4,6 +4,7 @@
 
     import UserObject from "./UserObject.svelte";
     import CreateUser from "./CreateUser.svelte";
+    import GetUser from "./GetUser.svelte";
 </script>
 
 <div id="user">
@@ -17,6 +18,10 @@
     <div class="divider"></div>
 
     <CreateUser on:displayAside/>
+
+    <div class="divider"></div>
+
+    <GetUser on:displayAside/>
 </div>
 
 <style>
