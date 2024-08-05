@@ -5,7 +5,7 @@
 
 <div id="getUser" class="container">
     <h2>Get User</h2>
-    <code class="route"><span class="method">GET</span>/api/user/<user_id></code><br>
+    <code class="route"><span class="method">GET</span>https://cosphere.work/api/user/&lt;user_id&gt;</code><br>
     <a class="auth" href="/docs/auth">Auth Required</a><br>
 
     <ExampleButton example="getUser" on:displayAside/>
@@ -38,7 +38,7 @@
 
     h3{
         margin: 35px 0 0 15px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .route{

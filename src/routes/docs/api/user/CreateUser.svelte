@@ -5,7 +5,7 @@
 
 <div id="createUser" class="container">
     <h2>Create User</h2>
-    <code class="route"><span class="method">POST</span>/api/user</code><br>
+    <code class="route"><span class="method">POST</span>https://cosphere.work/api/user</code><br>
 
     <ExampleButton example="createUser" on:displayAside/>
 
@@ -53,7 +53,7 @@
 
     h3{
         margin: 35px 0 0 15px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .route{
