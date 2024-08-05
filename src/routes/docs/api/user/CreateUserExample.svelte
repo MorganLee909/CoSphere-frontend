@@ -3,24 +3,18 @@
 
     <div>
         <h3>Request body</h3>
-        <pre>
-            <code>
-{'{'}
+        <pre><code>{'{'}
   "email": "John.Smith@mail.com",
   "password": "password123",
   "confirm_password": "password123",
   "first_name": "John",
   "last_name": "Smith"
-{'}'}
-            </code>
-        </pre>
+{'}'}</code></pre>
     </div>
 
     <div>
         <h3>Response body</h3>
-        <pre>
-            <code>
-{'{'}
+        <pre><code>{'{'}
   "_id": "507f191e810c19729de860ea",
   "email": "john.smith@mail.com",
   "first_name": "John",
@@ -28,9 +22,7 @@
   "status": "Unverified",
   "avatar": "/api/avatar/default.webp",
   "default_location": "6592008029c8c3e4dc76256c"
-{'}'}
-            </code>
-        </pre>
+{'}'}</code></pre>
     </div>
 </div>
 

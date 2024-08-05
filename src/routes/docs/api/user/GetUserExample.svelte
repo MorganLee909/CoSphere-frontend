@@ -13,7 +13,7 @@
   "email": "john.smith@mail.com",
   "first_name": "John",
   "last_name": "Smith",
-  "status": "Unverified",
+  "status": "Active",
   "avatar": "/api/avatar/default.webp",
   "default_location": "6592008029c8c3e4dc76256c"
 {'}'}</code></pre>

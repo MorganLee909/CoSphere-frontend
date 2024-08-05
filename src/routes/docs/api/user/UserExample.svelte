@@ -1,9 +1,8 @@
 <div class="container">
     <h1>User Object</h1>
 
-    <pre>
-        <code>
-{'{'}
+    <h3>User object</h3>
+    <pre><code>{'{'}
   "_id": "507f191e810c19729de860ea",
   "email": "john.smith@mail.com",
   "first_name": "John",
@@ -11,9 +10,7 @@
   "status": "Active",
   "avatar": "/api/avatar/507f1f77bcf86cd799439011.webp",
   "default_location": "6592008029c8c3e4dc76256c"
-{'}'}
-        </code>
-    </pre>
+{'}'}</code></pre>
 </div>
 
 <style>
@@ -34,9 +31,18 @@
         text-align: center;
     }
 
+    h3{
+        width: 98%;
+        background: rgb(35, 35, 35);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-left: 10px;
+    }
+
     pre{
         background: rgb(24, 27, 56);
-        border-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         padding: 5px 15px;
         font-size: 14px;
         line-height: 26px;
