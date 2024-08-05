@@ -1,4 +1,8 @@
-<div id="menu">
+<script>
+    export let width;
+</script>
+
+<div id="menu" style="width:{width}px">
     <h1>CoSphere</h1>
     <a class="main" href="#user">User</a>
     <a class="sub" href="#userObject">User Object</a>
@@ -16,7 +20,6 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        width: 250px;
         border-right: 3px solid rgba(255, 255, 255, 0.35);
     }
 

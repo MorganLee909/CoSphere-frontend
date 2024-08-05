@@ -6,21 +6,31 @@
 
     let showAside = false;
     let currentAside = "";
+    let menuWidth = 250;
 
     function displayAside(event){
-        showAside = !showAside;
-        currentAside = event.detail.currentAside;
+        if(!showAside){
+            showAside = true;
+            currentAside = event.detail.currentAside;
+        }else{
+            if(currentAside === event.detail.currentAside){
+                showAside = false;
+            }else{
+                currentAside = event.detail.currentAside;
+            }
+        }
     }
 </script>
 
-<div id="container">
-    <Menu></Menu>
+<div id="container" style="--menuWidth: {menuWidth}px">
+    <Menu width={menuWidth}></Menu>
 
-    <main>
+    <main class:mainSplit={showAside}>
         <User on:displayAside={displayAside}/>
     </main>
 
     {#if showAside} 
+        <div class="hiddenAside" class:asideSplit={showAside}></div>
         <aside>
             {#if currentAside === "userExample"}
                 <UserExample></UserExample>
@@ -34,15 +44,34 @@
         display: flex;
         background: rgb(20, 20, 20);
         color: white;
+        position: relative;
     }
 
     main{
         padding: 0 15px;
+        width: calc(100% - var(--menuWidth));
+    }
+
+    .mainSplit{
+        width: calc(60% - (var(--menuWidth) / 2));
+    }
+
+    .asideSplit{
+        width: calc(40% - (var(--menuWidth) / 2));
     }
 
     aside{
         display: flex;
         align-items: center;
-        max-width: 50%;
+        width: calc(40% - (var(--menuWidth) / 2));
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    .hiddenAside{
+        width: 0;
+        height: 100vh;
     }
 </style>
