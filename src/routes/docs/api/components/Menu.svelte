@@ -8,6 +8,7 @@
     <a class="sub" href="#userObject">User Object</a>
     <a class="sub" href="#createUser">Create User</a>
     <a class="sub" href="#getUser">Get User</a>
+    <a class="sub" href="#updateUser">Update User</a>
 </div>
 
 <style>

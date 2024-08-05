@@ -16,12 +16,16 @@
     }
 
     .propertyName{
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    .propertyDesc{
+        font-size: 14px;
     }
 
     .bold{
         font-weight: bold;
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 15px;
     }
 </style>

@@ -5,6 +5,7 @@
     import UserObject from "./UserObject.svelte";
     import CreateUser from "./CreateUser.svelte";
     import GetUser from "./GetUser.svelte";
+    import UpdateUser from "./UpdateUser.svelte";
 </script>
 
 <div id="user">
@@ -22,6 +23,10 @@
     <div class="divider"></div>
 
     <GetUser on:displayAside/>
+
+    <div class="divider"></div>
+
+    <UpdateUser on:displayAside/>
 </div>
 
 <style>
