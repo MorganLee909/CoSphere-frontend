@@ -1,6 +1,6 @@
 <script>
-    import ObjectProperty from "./ObjectProperty.svelte";
-    import ExampleButton from "./ExampleButton.svelte";
+    import ObjectProperty from "../components/ObjectProperty.svelte";
+    import ExampleButton from "../components/ExampleButton.svelte";
 </script>
 
 <div id="createUser" class="container">

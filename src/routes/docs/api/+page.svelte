@@ -1,9 +1,9 @@
 <script>
     import "../../../global.css";
-    import Menu from "./Menu.svelte";
-    import User from "./components/User.svelte";
-    import UserExample from "./components/UserExample.svelte";
-    import CreateUserExample from "./components/CreateUserExample.svelte";
+    import Menu from "./components/Menu.svelte";
+    import User from "./user/User.svelte";
+    import UserExample from "./user/UserExample.svelte";
+    import CreateUserExample from "./user/CreateUserExample.svelte";
 
     let showAside = false;
     let currentAside = "";
