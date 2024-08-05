@@ -3,6 +3,7 @@
     import Menu from "./Menu.svelte";
     import User from "./components/User.svelte";
     import UserExample from "./components/UserExample.svelte";
+    import CreateUserExample from "./components/CreateUserExample.svelte";
 
     let showAside = false;
     let currentAside = "";
@@ -33,7 +34,9 @@
         <div class="hiddenAside" class:asideSplit={showAside}></div>
         <aside>
             {#if currentAside === "userExample"}
-                <UserExample></UserExample>
+                <UserExample/>
+            {:else if currentAside === "createUser"}
+                <CreateUserExample/>
             {/if}
         </aside>
     {/if}
