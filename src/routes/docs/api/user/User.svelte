@@ -6,6 +6,7 @@
     import CreateUser from "./CreateUser.svelte";
     import GetUser from "./GetUser.svelte";
     import UpdateUser from "./UpdateUser.svelte";
+    import GetToken from "./GetToken.svelte";
 </script>
 
 <div id="user">
@@ -13,20 +14,19 @@
     <p>The user is the data for individuals who have signed up for CoSphere, whether verified/paid/etc. or not. Users may be standard users or office users.</p>
 
     <div class="divider"></div>
-
     <UserObject on:displayAside/>
 
     <div class="divider"></div>
-
     <CreateUser on:displayAside/>
 
     <div class="divider"></div>
-
     <GetUser on:displayAside/>
 
     <div class="divider"></div>
-
     <UpdateUser on:displayAside/>
+
+    <div class="divider"></div>
+    <GetToken on:displayAside/>
 </div>
 
 <style>

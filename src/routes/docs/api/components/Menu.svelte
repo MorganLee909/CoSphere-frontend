@@ -7,6 +7,7 @@
     <a class="main" href="#user">User</a>
     <a class="sub" href="#userObject">User Object</a>
     <a class="sub" href="#createUser">Create User</a>
+    <a class="sub" href="#userToken">Get Token (login)</a>
     <a class="sub" href="#getUser">Get User</a>
     <a class="sub" href="#updateUser">Update User</a>
 </div>

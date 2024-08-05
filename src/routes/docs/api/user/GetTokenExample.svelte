@@ -1,21 +1,18 @@
 <div class="container">
-    <h1>Get User</h1>
+    <h1>Get token (login)</h1>
 
     <div>
-        <h3>Example URL</h3>
-        <pre><code>GET https://cosphere.work/api/user/507f191e810c19729de860ea</code></pre>
+        <h3>Request body</h3>
+        <pre><code>{'{'}
+  "email": "john.smith@mail.com",
+  "password": "password123"
+{'}'}</code></pre>
     </div>
 
     <div>
         <h3>Response body</h3>
         <pre><code>{'{'}
-  "_id": "507f191e810c19729de860ea",
-  "email": "john.smith@mail.com",
-  "first_name": "John",
-  "last_name": "Smith",
-  "status": "Active",
-  "avatar": "/api/avatar/default.webp",
-  "default_location": "6592008029c8c3e4dc76256c"
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2YWJkZmU1N2ZhMmFiNGE2NmM5NmNhZSIsImVtYWlsIjoiYUBsZWVtb3JnYW4uZGV2Iiwic2Vzc2lvbiI6IjEyMzQ1IiwiZXhwIjoxNzU0MDc2NTM2fQ.VCZ_nwYixgHbBWjeat7Aanxd2pUXSnJdUHxzjc-LzmY"
 {'}'}</code></pre>
     </div>
 </div>

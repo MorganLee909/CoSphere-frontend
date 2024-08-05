@@ -6,6 +6,7 @@
     import CreateUserExample from "./user/CreateUserExample.svelte";
     import GetUserExample from "./user/GetUserExample.svelte";
     import UpdateUserExample from "./user/UpdateUserExample.svelte";
+    import GetTokenExample from "./user/GetTokenExample.svelte";
 
     let showAside = false;
     let currentAside = "";
@@ -43,6 +44,8 @@
                 <GetUserExample/>
             {:else if currentAside === "updateUser"}
                 <UpdateUserExample/>
+            {:else if currentAside === "getToken"}
+                <GetTokenExample/>
             {/if}
         </aside>
     {/if}
