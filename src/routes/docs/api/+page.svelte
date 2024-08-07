@@ -3,7 +3,7 @@
     import Menu from "./components/Menu.svelte";
     import User from "./user/User.svelte";
     import RouteExample from "./components/RouteExample.svelte";
-    import exampleData from "./user/examples.js";
+    import userExamples from "./user/examples.js";
 
     let showAside = false;
     let menuWidth = 250;
@@ -12,16 +12,14 @@
     function displayAside(event){
         if(!showAside){
             showAside = true;
-            currentExample = exampleData[event.detail.currentAside];
+            currentExample = userExamples[event.detail.currentAside];
         }else{
-            if(currentExample === exampleData[event.detail.currentAside]){
+            if(currentExample === userExamples[event.detail.currentAside]){
                 showAside = false;
             }else{
-                currentExample = exampleData[event.detail.currentAside];
+                currentExample = userExamples[event.detail.currentAside];
             }
         }
-
-        console.log(currentExample);
     }
 </script>
 
@@ -37,6 +35,7 @@
         <aside>
             <RouteExample
                 title={currentExample.title}
+                object={currentExample.object}
                 url={currentExample.url}
                 request={currentExample.request}
                 response={currentExample.response}

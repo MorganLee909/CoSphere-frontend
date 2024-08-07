@@ -1,9 +1,16 @@
 <script>
-    export let title, url, request, response, codeExample;
+    export let object, title, url, request, response, codeExample;
 </script>
 
 <div class="container">
     <h1>{title}</h1>
+
+    {#if object}
+        <div>
+            <h3>Object</h3>
+            <pre><code>{object}</code></pre>
+        </div>
+    {/if}
 
     {#if url}
         <div>
@@ -39,7 +46,7 @@
         display: flex;
         flex-direction: column; 
         justify-content: space-around;
-        height: 100vh;
+        max-height: 100vh;
         width: 100%;
         overflow: auto;
         padding-top: 100px;
