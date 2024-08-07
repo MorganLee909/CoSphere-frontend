@@ -2,7 +2,7 @@
     export let width;
 </script>
 
-<div id="menu" style="width:{width}px">
+<div class="menu" style="width:{width}px">
     <h1>CoSphere</h1>
     <a class="main" href="#user">User</a>
     <a class="sub" href="#userObject">User Object</a>
@@ -14,6 +14,8 @@
     <a class="sub" href="#deleteUser">Delete User</a>
 </div>
 
+<div class="widthHolder" style="width:{width}px"></div>
+
 <style>
     *{margin:0;padding:0;box-sizing:border-box;}
 
@@ -21,11 +23,14 @@
         text-align: center;
     }
 
-    #menu{
+    .menu{
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         border-right: 3px solid rgba(255, 255, 255, 0.35);
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .main{
@@ -42,5 +47,9 @@
         text-decoration: none;
         color: rgb(200, 200, 200);
         margin-left: 25px;
+    }
+
+    .widthHolder{
+        height: 100%;
     }
 </style>
