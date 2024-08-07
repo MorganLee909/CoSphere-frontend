@@ -103,5 +103,13 @@ fetch(\`https://cosphere.work/api/user/\${userId}/avatar\`, {
     .catch((err)=>{
         //Handle Error
     });`
+    },
+
+    deleteUser: {
+        title: "Delete user",
+        url: "DELETE https://cosphere.work/api/user/507f191e810c19729de860ea",
+        response: `{
+  "success": true
+}`
     }
 };

@@ -8,6 +8,7 @@
     import UpdateUser from "./UpdateUser.svelte";
     import GetToken from "./GetToken.svelte";
     import UpdateAvatar from "./UpdateAvatar.svelte";
+    import DeleteUser from "./DeleteUser.svelte";
 </script>
 
 <div id="user">
@@ -31,6 +32,9 @@
 
     <div class="divider"></div>
     <UpdateAvatar on:displayAside/>
+
+    <div class="divider"></div>
+    <DeleteUser on:displayAside/>
 </div>
 
 <style>
