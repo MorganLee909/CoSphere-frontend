@@ -2,28 +2,26 @@
     import "../../../global.css";
     import Menu from "./components/Menu.svelte";
     import User from "./user/User.svelte";
-    import UserExample from "./user/UserExample.svelte";
-    import CreateUserExample from "./user/CreateUserExample.svelte";
-    import GetUserExample from "./user/GetUserExample.svelte";
-    import UpdateUserExample from "./user/UpdateUserExample.svelte";
-    import GetTokenExample from "./user/GetTokenExample.svelte";
-    import UpdateAvatarExample from "./user/UpdateAvatarExample.svelte";
+    import RouteExample from "./components/RouteExample.svelte";
+    import exampleData from "./user/examples.js";
 
     let showAside = false;
-    let currentAside = "";
     let menuWidth = 250;
+    let currentExample = {};
 
     function displayAside(event){
         if(!showAside){
             showAside = true;
-            currentAside = event.detail.currentAside;
+            currentExample = exampleData[event.detail.currentAside];
         }else{
-            if(currentAside === event.detail.currentAside){
+            if(currentExample === exampleData[event.detail.currentAside]){
                 showAside = false;
             }else{
-                currentAside = event.detail.currentAside;
+                currentExample = exampleData[event.detail.currentAside];
             }
         }
+
+        console.log(currentExample);
     }
 </script>
 
@@ -37,19 +35,13 @@
     {#if showAside} 
         <div class="hiddenAside" class:asideSplit={showAside}></div>
         <aside>
-            {#if currentAside === "userExample"}
-                <UserExample/>
-            {:else if currentAside === "createUser"}
-                <CreateUserExample/>
-            {:else if currentAside === "getUser"}
-                <GetUserExample/>
-            {:else if currentAside === "updateUser"}
-                <UpdateUserExample/>
-            {:else if currentAside === "getToken"}
-                <GetTokenExample/>
-            {:else if currentAside === "updateAvatar"}
-                <UpdateAvatarExample/>
-            {/if}
+            <RouteExample
+                title={currentExample.title}
+                url={currentExample.url}
+                request={currentExample.request}
+                response={currentExample.response}
+                codeExample={currentExample.codeExample}
+            /> 
         </aside>
     {/if}
 </div>
