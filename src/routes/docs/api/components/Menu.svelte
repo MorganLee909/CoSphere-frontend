@@ -10,6 +10,7 @@
     <a class="sub" href="#userToken">Get Token (login)</a>
     <a class="sub" href="#getUser">Get User</a>
     <a class="sub" href="#updateUser">Update User</a>
+    <a class="sub" href="#updateAvatar">Update Avatar</a>
 </div>
 
 <style>
