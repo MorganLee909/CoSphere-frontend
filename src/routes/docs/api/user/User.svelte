@@ -2,14 +2,6 @@
     import {createEventDispatcher} from "svelte";
     const dispatch = createEventDispatcher();
 
-    import UserObject from "./UserObject.svelte";
-    import CreateUser from "./CreateUser.svelte";
-    import GetUser from "./GetUser.svelte";
-    import UpdateUser from "./UpdateUser.svelte";
-    import GetToken from "./GetToken.svelte";
-    import UpdateAvatar from "./UpdateAvatar.svelte";
-    import DeleteUser from "./DeleteUser.svelte";
-
     import Route from "../components/Route.svelte";
     import routes from "./routes.js";
 </script>
@@ -23,6 +15,7 @@
         <Route
             name={route.name}
             title={route.title}
+            auth={route.auth}
             method={route.method}
             url={route.url}
             data={route.data}

@@ -5,7 +5,6 @@
     export let name, title, method, url, data;
     export let auth = false;
     let dataTypes = Object.keys(data);
-    console.log(name);
 </script>
 
 <div id={name} class="container">
