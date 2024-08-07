@@ -1,5 +1,5 @@
 export default {
-    userExample: {
+    userObject: {
         title: "User Object",
         object: `{
   "_id": "507f191e810c19729de860ea",

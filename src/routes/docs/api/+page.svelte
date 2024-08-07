@@ -10,6 +10,7 @@
     let currentExample = {};
 
     function displayAside(event){
+        console.log(event.detail.currentAside);
         if(!showAside){
             showAside = true;
             currentExample = userExamples[event.detail.currentAside];

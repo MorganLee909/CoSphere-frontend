@@ -9,32 +9,26 @@
     import GetToken from "./GetToken.svelte";
     import UpdateAvatar from "./UpdateAvatar.svelte";
     import DeleteUser from "./DeleteUser.svelte";
+
+    import Route from "../components/Route.svelte";
+    import routes from "./routes.js";
 </script>
 
 <div id="user">
     <h1>User</h1>
     <p>The user is the data for individuals who have signed up for CoSphere, whether verified/paid/etc. or not. Users may be standard users or office users.</p>
 
-    <div class="divider"></div>
-    <UserObject on:displayAside/>
-
-    <div class="divider"></div>
-    <CreateUser on:displayAside/>
-
-    <div class="divider"></div>
-    <GetUser on:displayAside/>
-
-    <div class="divider"></div>
-    <UpdateUser on:displayAside/>
-
-    <div class="divider"></div>
-    <GetToken on:displayAside/>
-
-    <div class="divider"></div>
-    <UpdateAvatar on:displayAside/>
-
-    <div class="divider"></div>
-    <DeleteUser on:displayAside/>
+    {#each routes as route}
+        <div class="divider"></div>
+        <Route
+            name={route.name}
+            title={route.title}
+            method={route.method}
+            url={route.url}
+            data={route.data}
+            on:displayAside
+        />
+    {/each}
 </div>
 
 <style>
