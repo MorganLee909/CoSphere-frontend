@@ -232,5 +232,51 @@ export default [
                 }
             ],
         }
+    },
+
+    {
+        name: "emailVerification",
+        title: "Send Verification Email",
+        method: "GET",
+        url: "https://cosphere.work/api/user/<user_id>/verify-email",
+        data: {
+            "Parameters": [
+                {
+                    name: "user_id",
+                    type: "string",
+                    description: "Unique ID of the user to send verification email to"
+                }
+            ],
+            "Response Body": [
+                {
+                    name: "success",
+                    type: "boolean",
+                    description: "Always true, Will return error if unseccessful"
+                }
+            ]
+        }
+    },
+
+    {
+        name: "verifyEmail",
+        title: "Verify User Email",
+        method: "PUT",
+        url: "https://cosphere.work/api/user/<user_id>/verify",
+        data: {
+            "Parameters": [
+                {
+                    name: "user_id",
+                    type: "string",
+                    description: "Unique ID of the user whose email is to be verified"
+                }
+            ],
+            "Request Body": [
+                {
+                    name: "code",
+                    type: "string",
+                    description: "Verification code contained in the URL. It will be the fourth parameter, after 'route'"
+                }
+            ]
+        }
     }
 ]

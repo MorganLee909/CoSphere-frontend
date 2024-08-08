@@ -12,6 +12,8 @@
     <a class="sub" href="#updateUser">Update User</a>
     <a class="sub" href="#updateAvatar">Update Avatar</a>
     <a class="sub" href="#deleteUser">Delete User</a>
+    <a class="sub" href="#emailVerification">Send Verification Email</a>
+    <a class="sub" href="#verifyEmail">Verify User Email</a>
 </div>
 
 <div class="widthHolder" style="width:{width}px"></div>

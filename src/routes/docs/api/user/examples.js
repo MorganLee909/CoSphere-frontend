@@ -111,5 +111,24 @@ fetch(\`https://cosphere.work/api/user/\${userId}/avatar\`, {
         response: `{
   "success": true
 }`
+    },
+
+    emailVerification: {
+        title: "Send Verification Email",
+        url: "GET https://cosphere.work/api/user/507f191e810c19729de860ea",
+        response: `{
+  "success": true
+}`
+    },
+
+    verifyEmail: {
+        title: "Verify User Email",
+        url: "POST https://cosphere.work/api/user/507f191e810c19729de860ea/verify",
+        request: `{
+  "code": "66b4f82e56617d883a838726"
+}`,
+        response: `{
+  "success": true
+}`
     }
 };
