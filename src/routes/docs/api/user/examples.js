@@ -130,5 +130,28 @@ fetch(\`https://cosphere.work/api/user/\${userId}/avatar\`, {
         response: `{
   "success": true
 }`
+    },
+
+    passwordEmail: {
+        title: "Send Password Reset Email",
+        request: `{
+  "email": "john.smith@mail.com"
+}`,
+        response: `{
+  "success": true
+}`
+    },
+
+    resetPassword: {
+        title: "Reset User Password",
+        url: "PUT https://cosphere.work/api/user/507f191e810c19729de860ea/password",
+        request: `{
+  "code": "66b4f82e56617d883a838726",
+  "password": "password1234",
+  "confirm_password": "password1234"
+}`,
+        response: `{
+  "success": true
+}`
     }
 };

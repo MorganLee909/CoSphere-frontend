@@ -14,6 +14,8 @@
     <a class="sub" href="#deleteUser">Delete User</a>
     <a class="sub" href="#emailVerification">Send Verification Email</a>
     <a class="sub" href="#verifyEmail">Verify User Email</a>
+    <a class="sub" href="#passwordEmail">Reset Password Email</a>
+    <a class="sub" href="#resetPassword">Reset Password</a>
 </div>
 
 <div class="widthHolder" style="width:{width}px"></div>

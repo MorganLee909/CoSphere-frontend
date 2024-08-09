@@ -260,7 +260,7 @@ export default [
     {
         name: "verifyEmail",
         title: "Verify User Email",
-        method: "PUT",
+        method: "POST",
         url: "https://cosphere.work/api/user/<user_id>/verify",
         data: {
             "Parameters": [
@@ -275,6 +275,70 @@ export default [
                     name: "code",
                     type: "string",
                     description: "Verification code contained in the URL. It will be the fourth parameter, after 'route'"
+                }
+            ]
+        }
+    },
+
+    {
+        name: "passwordEmail",
+        title: "Send Password Reset Email",
+        method: "POST",
+        url: "https://cosphere.work/api/user/password",
+        data: {
+            "Request Body": [
+                {
+                    name: "email",
+                    type: "string",
+                    description: "Email of the user to send email to"
+                }
+            ],
+            "Response Body": [
+                {
+                    name: "success",
+                    type: "boolean",
+                    description: "True if user is found, false if there is no user with that email address"
+                }
+            ]
+        }
+    },
+
+    {
+        name: "resetPassword",
+        title: "Reset User Password",
+        method: "PUT",
+        url: "https://cosphere.work/api/user/<user_id>/password",
+        data: {
+            "Parameters": [
+                {
+                    name: "user_id",
+                    type: "string",
+                    description: "Unique ID of the user whose password is to be reset"
+                }
+            ],
+            "Request Body": [
+                {
+                    name: "code",
+                    type: "string",
+                    description: "Code contained in the URL. it will be the last parameter"
+                },
+                {
+                    name: "password",
+                    type: "string",
+                    description: "New password for the user"
+                },
+                {
+                    name: "confirm_password",
+                    type: "string",
+                    description: "Confirmation password that should match the password"
+                }
+
+            ],
+            "Response Body": [
+                {
+                    name: "success",
+                    type: "boolean",
+                    description: "Always true. Will return error if it fails"
                 }
             ]
         }
