@@ -18,6 +18,7 @@
     <a class="sub" href="#resetPassword">Reset Password</a>
     <a class="main" href="#location">Location</a>
     <a class="sub" href="#locationObject">Location Object</a>
+    <a class="sub" href="#getLocation">Get Location</a>
 </div>
 
 <div class="widthHolder" style="width:{width}px"></div>
