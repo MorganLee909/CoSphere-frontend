@@ -16,6 +16,8 @@
     <a class="sub" href="#verifyEmail">Verify User Email</a>
     <a class="sub" href="#passwordEmail">Reset Password Email</a>
     <a class="sub" href="#resetPassword">Reset Password</a>
+    <a class="main" href="#location">Location</a>
+    <a class="sub" href="#locationObject">Location Object</a>
 </div>
 
 <div class="widthHolder" style="width:{width}px"></div>

@@ -2,23 +2,29 @@
     import "../../../global.css";
     import Menu from "./components/Menu.svelte";
     import User from "./user/User.svelte";
+    import Location from "./location/Location.svelte";
     import RouteExample from "./components/RouteExample.svelte";
     import userExamples from "./user/examples.js";
+    import locationExamples from "./location/examples.js";
+
+    const examples = {
+        ...userExamples,
+        ...locationExamples
+    };
 
     let showAside = false;
     let menuWidth = 250;
     let currentExample = {};
 
     function displayAside(event){
-        console.log(event.detail.currentAside);
         if(!showAside){
             showAside = true;
-            currentExample = userExamples[event.detail.currentAside];
+            currentExample = examples[event.detail.currentAside];
         }else{
-            if(currentExample === userExamples[event.detail.currentAside]){
+            if(currentExample === examples[event.detail.currentAside]){
                 showAside = false;
             }else{
-                currentExample = userExamples[event.detail.currentAside];
+                currentExample = examples[event.detail.currentAside];
             }
         }
     }
@@ -29,6 +35,7 @@
 
     <main class:mainSplit={showAside}>
         <User on:displayAside={displayAside}/>
+        <Location on:displayAside={displayAside}/>
     </main>
 
     {#if showAside} 
