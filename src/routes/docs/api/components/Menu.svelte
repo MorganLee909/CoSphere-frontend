@@ -19,6 +19,7 @@
     <a class="main" href="#location">Location</a>
     <a class="sub" href="#locationObject">Location Object</a>
     <a class="sub" href="#getLocation">Get Location</a>
+    <a class="sub" href="#getLocations">Get Available Locations</a>
 </div>
 
 <div class="widthHolder" style="width:{width}px"></div>

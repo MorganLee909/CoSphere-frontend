@@ -12,12 +12,7 @@ export default [
                 {
                     name: "public",
                     type: "boolean",
-                    description: "Determines whether location is open to public. If not public, location will contain a list of users"
-                },
-                {
-                    name: "members",
-                    type: "array of User",
-                    description: "If not public, list of Users allowed to access this location"
+                    description: "Determines whether location is open to public."
                 },
                 {
                     name: "tables",
@@ -42,11 +37,28 @@ export default [
                     description: "Unique id of the location to retrieve data for"
                 }
             ],
-            "Response body": [
+            "Response Body": [
                 {
                     name: "Location Object",
                     type: "Location",
                     description: "An object containing all of the data for the location"
+                }
+            ]
+        }
+    },
+
+    {
+        name: "getLocations",
+        title: "Get Available Locations",
+        method: "GET",
+        url: "https://cosphere.work/api/location",
+        auth: true,
+        data: {
+            "Response Body": [
+                {
+                    name: "Location Objects",
+                    type: "array of Location",
+                    description: "An array of locations that are available to the user, both public and private locations"
                 }
             ]
         }
