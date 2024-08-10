@@ -61,7 +61,6 @@
     #container{
         display: flex;
         background: rgb(20, 20, 20);
-        color: white;
         position: relative;
     }
 
