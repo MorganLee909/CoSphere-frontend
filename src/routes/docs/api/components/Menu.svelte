@@ -16,10 +16,6 @@
     <a class="sub" href="#verifyEmail">Verify User Email</a>
     <a class="sub" href="#passwordEmail">Reset Password Email</a>
     <a class="sub" href="#resetPassword">Reset Password</a>
-    <a class="main" href="#location">Location</a>
-    <a class="sub" href="#locationObject">Location Object</a>
-    <a class="sub" href="#getLocation">Get Location</a>
-    <a class="sub" href="#getLocations">Get Available Locations</a>
     <a class="main" href="#table">Table</a>
     <a class="sub" href="#tableObject">Table Object</a>
 </div>

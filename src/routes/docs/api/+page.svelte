@@ -2,16 +2,13 @@
     import "../../../global.css";
     import Menu from "./components/Menu.svelte";
     import User from "./user/User.svelte";
-    import Location from "./location/Location.svelte";
     import Table from "./table/Table.svelte";
     import RouteExample from "./components/RouteExample.svelte";
     import userExamples from "./user/examples.js";
-    import locationExamples from "./location/examples.js";
     import tableExamples from "./table/examples.js";
 
     const examples = {
         ...userExamples,
-        ...locationExamples,
         ...tableExamples
     };
 
@@ -38,7 +35,6 @@
 
     <main class:mainSplit={showAside}>
         <User on:displayAside={displayAside}/>
-        <Location on:displayAside={displayAside}/>
         <Table on:displayAside={displayAside}/>
     </main>
 
