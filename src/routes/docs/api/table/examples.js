@@ -43,5 +43,13 @@ export default {
     },
   ]
 }`
+    },
+
+    joinTable: {
+        title: "Join Table",
+        url: "PUT https://cosphere.work/api/table/66bbb680fbb07354a683872a",
+        response: `{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY2YWJkZmU1N2ZhMmFiNGE2NmM5NmNhZSIsImVtYWlsIjoiYUBsZWVtb3JnYW4uZGV2Iiwic2Vzc2lvbiI6IjEyMzQ1IiwiZXhwIjoxNzU0MDc2NTM2fQ.VCZ_nwYixgHbBWjeat7Aanxd2pUXSnJdUHxzjc-LzmY"
+}`
     }
 }

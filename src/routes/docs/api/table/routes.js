@@ -41,5 +41,26 @@ export default [
                 }
             ]
         }
+    },
+
+    {
+        name: "joinTable",
+        title: "Join Table",
+        description: "This route will add the user to the table on the back-end and return a JSON web token used to join the meeting",
+        auth: true,
+        method: "PUT",
+        url: "https://cosphere.work/api/table/<table_id>",
+        data: {
+            "Parameters": [{
+                name: "table_id",
+                type: "string",
+                description: "ID of the table the user is trying to join"
+            }],
+            "Response Body": [{
+                    name: "token",
+                    type: "string",
+                    description: "JSON web token used for joining Jitsi meeting"
+            }]
+        }
     }
 ];
