@@ -11,7 +11,11 @@
     <h2>{title}</h2>
 
     {#if url}
-        <code class="route"><span class="method">{method}</span>{url}</code><br>
+        {#if method}
+            <code class="route"><span class="method">{method}</span>{url}</code><br>
+        {:else}
+            <code class="route">{url}</code><br>
+        {/if}
     {/if}
 
     {#if description}

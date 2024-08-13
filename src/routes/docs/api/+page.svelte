@@ -9,11 +9,13 @@
     import userExamples from "./user/examples.js";
     import locationExamples from "./location/examples.js";
     import tableExamples from "./table/examples.js";
+    import websocketExamples from "./websocket/examples.js";
 
     const examples = {
         ...userExamples,
         ...locationExamples,
-        ...tableExamples
+        ...tableExamples,
+        ...websocketExamples
     };
 
     let showAside = false;
