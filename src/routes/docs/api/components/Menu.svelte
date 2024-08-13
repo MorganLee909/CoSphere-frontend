@@ -22,6 +22,8 @@
     <a class="main" href="#table">Table</a>
     <a class="sub" href="#tableObject">Table Object</a>
     <a class="sub" href="#joinTable">Join Table</a>
+    <a class="main" href="#websocket">Websockets</a>
+    <a class="sub" href="#getTables">Retrieve Tables <span class="socketType">(out)</span></a>
 </div>
 
 <div class="widthHolder" style="width:{width}px"></div>
@@ -61,5 +63,10 @@
 
     .widthHolder{
         height: 100%;
+    }
+
+    .socketType{
+        font-size: 14px;
+        font-style: italic;
     }
 </style>

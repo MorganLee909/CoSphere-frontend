@@ -4,6 +4,7 @@
     import User from "./user/User.svelte";
     import Location from "./location/Location.svelte";
     import Table from "./table/Table.svelte";
+    import Websocket from "./websocket/Websocket.svelte";
     import RouteExample from "./components/RouteExample.svelte";
     import userExamples from "./user/examples.js";
     import locationExamples from "./location/examples.js";
@@ -40,6 +41,7 @@
         <User on:displayAside={displayAside}/>
         <Location on:displayAside={displayAside}/>
         <Table on:displayAside={displayAside}/>
+        <Websocket on:displayAside={displayAside}/>
     </main>
 
     {#if showAside} 

@@ -6,11 +6,11 @@
     import routes from "./routes.js";
 </script>
 
-<div id="table">
-    <h1>Table</h1>
-    <p>Tables contain users that have joined, or are in the process of joining a Jitsi meeting. A location will contain multiple tables that users may join.</p>
+<div id="websocket">
+    <h1>Websockets</h1>
+    <p>Websockets are primarily used to get/send data about tables.</p>
 
-    <p>Most data for the tables will be handled with websockets</p>
+    <p><span class="socketType">(in)</span> is used to mark incoming websocket data, that is, data that is being sent from the server. <span class="socketType">(out)</span> is used to mark outgoing websocket data, data that comes from the client.</p>
 
     {#each routes as route}
         <div class="divider"></div>
@@ -21,7 +21,6 @@
             method={route.method}
             url={route.url}
             data={route.data}
-            description={route.description}
             on:displayAside
         />
     {/each}
@@ -38,6 +37,11 @@
     }
 
     p{
-        margin: 15px; 
+        margin: 15px 0;
+    }
+
+    .socketType{
+        font-size: 14px;
+        font-style: italic;
     }
 </style>

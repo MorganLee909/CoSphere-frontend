@@ -2,7 +2,7 @@
     import ObjectProperty from "./ObjectProperty.svelte";
     import ExampleButton from "./ExampleButton.svelte";
 
-    export let name, title, method, url, data;
+    export let name, title, method, description, url, data;
     export let auth = false;
     let dataTypes = Object.keys(data);
 </script>
@@ -12,6 +12,10 @@
 
     {#if url}
         <code class="route"><span class="method">{method}</span>{url}</code><br>
+    {/if}
+
+    {#if description}
+        <p class="description">{description}</p>
     {/if}
 
     {#if auth}
@@ -58,5 +62,9 @@
     .auth{
         margin-left: 15px;
         font-size: 14px;
+    }
+
+    .description{
+        margin: 15px 0 15px 15px;
     }
 </style>
