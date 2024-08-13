@@ -24,5 +24,19 @@ export default {
     "name": "Denver"
   }
 ]`
+    },
+
+    getLocation: {
+        title: "Get Location",
+        url: "GET https://cosphere.work/api/location/66bbb392fbb07354a6838727",
+        response: `{
+  "_id": "66bbb392fbb07354a6838727",
+  "name:": "Denver",
+  "tables": [
+    "66bbb67ffbb07354a6838728",
+    "66bbb67ffbb07354a6838729",
+    "66bbb680fbb07354a683872a"
+  ]
+}`
     }
 }

@@ -43,5 +43,25 @@ export default [
                 }
             ]
         }
+    },
+
+    {
+        name: "getLocation",
+        title: "Get Location",
+        auth: true,
+        method: "GET",
+        url: "https://cosphere.work/api/location/<location_id>",
+        data: {
+            "Parameters": [{
+                name: "location_id",
+                type: "string",
+                description: "ID of the location whose data is to be retrieved"
+            }],
+            "Response Body": [{
+                name: "Location Object",
+                type: "Location",
+                description: "An object containing all of the data for the user"
+            }]
+        }
     }
 ];

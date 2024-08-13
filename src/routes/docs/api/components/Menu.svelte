@@ -18,6 +18,7 @@
     <a class="sub" href="#resetPassword">Reset Password</a>
     <a class="main" href="#location">Location</a>
     <a class="sub" href="#getLocations">Get Locations</a>
+    <a class="sub" href="#getLocation">Get Location</a>
     <a class="main" href="#table">Table</a>
     <a class="sub" href="#tableObject">Table Object</a>
     <a class="sub" href="#joinTable">Join Table</a>
